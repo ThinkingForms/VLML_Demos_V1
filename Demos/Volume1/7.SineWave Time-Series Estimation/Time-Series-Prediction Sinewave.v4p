@@ -1,0 +1,9 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
+   <PATCH nodename="C:\Users\H\Documents\Praxis\hayds_vl-packs\CNTK\VLML_Demos\Demos\Volume1\SineWave Time-Series Estimation\Time-Series-Prediction Sinewave.v4p" systemname="Time-Series-Prediction Sinewave" filename="C:\Users\H\Documents\Praxis\hayds_vl-packs\CNTK\VLML_Demos\Demos\Volume1\SineWave Time-Series Estimation\Time-Series-Prediction Sinewave.v4p">
+   <BOUNDS type="Window" left="12930" top="9045" width="4425" height="5700">
+   </BOUNDS>
+   <NODE systemname="TSE_Sinewave (VLMLDemo)" filename="vl\VVVV.VLMLDemo.TSE_Sinewave.vl" nodename="TSE_Sinewave (VLMLDemo)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1500" top="1215" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   </PATCH>
