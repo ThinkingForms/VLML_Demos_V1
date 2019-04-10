@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
-   <PATCH nodename="C:\Users\H\Documents\Praxis\hayds_vl-packs\CNTK\VLML_Demos\Demos\Volume1\Leap Time-Series Estimation\Time Estimation.v4p" systemname="Point_Reconstruction" filename="C:\Users\H\Desktop\Bimbam\Point_Reconstruction.v4p" scrollx="15" scrolly="-360">
+   <PATCH nodename="C:\Users\H\Documents\Praxis\hayds_vl-packs\CNTK\VLML_Demos\Demos\Volume1\8.Leap Time-Series Estimation\Time Estimation.v4p" systemname="Point_Reconstruction" filename="C:\Users\H\Desktop\Bimbam\Point_Reconstruction.v4p" scrollx="15" scrolly="720">
    <BOUNDS type="Window" left="375" top="0" width="14115" height="10980">
    </BOUNDS>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="0">
@@ -488,6 +488,20 @@
    <BOUNDS type="Box" left="555" top="2055" width="2400" height="465">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Though some dummy data is included if you don&apos;t have one&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="65">
+   <BOUNDS type="Node" left="0" top="0" width="1170" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="0" width="1170" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="--expose-pins">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>

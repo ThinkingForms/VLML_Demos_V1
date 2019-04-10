@@ -144,23 +144,13 @@
               <Pin Id="NUD8ei2QqSdORHdhI4l4Yi" Name="Input" Kind="InputPin" />
               <Pin Id="R2gplHNOpFmLETgKKLF1d4" Name="Result" Kind="OutputPin" />
             </Node>
-            <Node Bounds="821,556,65,19" Id="PIDxuSoJvO2Mt5ODAxEe33">
+            <Node Bounds="821,594,65,19" Id="PIDxuSoJvO2Mt5ODAxEe33">
               <p:NodeReference LastCategoryFullName="VLMLInternal.DataIO.DataOutput" LastSymbolSource="CNTK_DataIO.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="DataOut (Image3Chan)" />
               </p:NodeReference>
               <Pin Id="TgGSyhlSR9XNbYwQIfv6rP" Name="Data" Kind="InputPin" />
-              <Pin Id="FgKuJM9sjfLN7Jy9dkIFcy" Name="Width" Kind="InputPin" DefaultValue="224">
-                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                  <Choice Kind="TypeFlag" Name="Integer32" />
-                </p:TypeAnnotation>
-              </Pin>
-              <Pin Id="LOA6ftOpYqAPulT91OwAU1" Name="Height" Kind="InputPin" DefaultValue="224">
-                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                  <Choice Kind="TypeFlag" Name="Integer32" />
-                </p:TypeAnnotation>
-              </Pin>
-              <Pin Id="QQ0vaQ4LCyCNJdIL4nyebu" Name="ChannelCount" Kind="InputPin" />
+              <Pin Id="GHuk7e1Dy20NFdi70CTHg5" Name="Shape" Kind="InputPin" />
               <Pin Id="E4Jz00ChiwKLPakqVYEPy3" Name="Output" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="OeF415ffh0MPIy0NCrY34w" Bounds="104,972" />
@@ -249,7 +239,7 @@
                       <Patch Id="F0ITLK7bKiGPVaCRvvGtSb" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="VreGjoaybpbLZxinMBaFLw" Name="Then" ManuallySortedPins="true" />
                       <Node Bounds="354,580,98,13" Id="MgEE1I3gJm9N3Rp3NcVJCj">
-                        <p:NodeReference LastCategoryFullName="Dataset" LastSymbolSource="Utils.Datasets.vl">
+                        <p:NodeReference LastCategoryFullName="VLMLUtils.Dataset" LastSymbolSource="Utils.Datasets.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="ProcessAppFlag" Name="LabelDataFromJson" />
                         </p:NodeReference>
@@ -548,10 +538,10 @@
               <Pin Id="MAUqNI7MYJtP7op4Qe1lkP" Name="Text" Kind="InputPin" />
               <Pin Id="CjIPRq2ucWULYoHbecBvZQ" Name="Input" Kind="InputPin" />
             </Node>
-            <Overlay Id="Op0hp1Ep4R1PzgeCK050wm" Name="" Bounds="183,373,298,116" />
-            <Overlay Id="K4jUnmtkR3FPPWWrz47nQx" Name="" Bounds="183,546,300,75" />
-            <Overlay Id="GKLxZoqWl59LqXnt7t9jXi" Name="" Bounds="183,698,300,77" />
-            <Overlay Id="SfQm6LIj3HuPjTR98PTEZb" Name="" Bounds="183,852,298,79" />
+            <Overlay Id="Op0hp1Ep4R1PzgeCK050wm" Name="Load Image" Bounds="183,373,298,116" />
+            <Overlay Id="K4jUnmtkR3FPPWWrz47nQx" Name="Set you data as the model's input" Bounds="183,546,300,75" />
+            <Overlay Id="GKLxZoqWl59LqXnt7t9jXi" Name="Evaluate! Run! Calculate! Execute! etc" Bounds="183,698,300,77" />
+            <Overlay Id="SfQm6LIj3HuPjTR98PTEZb" Name="Choose what kind of output you want" Bounds="183,852,298,79" />
             <Pad Id="ALg6KbmAwQjNq6nckGECEs" Bounds="536,118,243,38" ShowValueBox="true" isIOBox="true" Value="Loading A Model">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="String" />
@@ -571,8 +561,8 @@
               <Pin Id="MNlmO75pmqZQAQlN0RVvzD" Name="Operand" Kind="InputPin" />
               <Pin Id="GNA0MJq884vOcYoFk9sdUE" Name="Output" Kind="OutputPin" />
             </Node>
-            <Overlay Id="RKq7AR7kacjPjMYJiei0EK" Name="" Bounds="78,282,949,686" FillColor="#EFEFEF00" />
-            <Overlay Id="KDJpUjHfEfZNBdMcD6Nlp1" Name="DataIn (Image)" Bounds="705,219,330,382" />
+            <Overlay Id="RKq7AR7kacjPjMYJiei0EK" Name="" Bounds="78,282,433,686" FillColor="#EFEFEF00" />
+            <Overlay Id="KDJpUjHfEfZNBdMcD6Nlp1" Name="DataIn (Image)" Bounds="705,219,330,382" FillColor="#EFEFEF00" />
             <Node Bounds="819,491,125,19" Id="Kk5lJWiJqDKLUoimOWobSh">
               <p:NodeReference LastCategoryFullName="VLMLInternal.DataIO.DataInput" LastSymbolSource="CNTK_DataIO.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -641,10 +631,10 @@
                 <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
               </p:ValueBoxSettings>
             </Pad>
-            <Node Bounds="821,522,89,19" Id="J1tkn9fnnLjO8LDDskl4ze">
+            <Node Bounds="821,560,89,19" Id="J1tkn9fnnLjO8LDDskl4ze">
               <p:NodeReference LastCategoryFullName="VLMLInternal.Evaluation.DataIO" LastSymbolSource="CNTK_Evaluation.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="CheckInputData" />
+                <Choice Kind="ProcessAppFlag" Name="CheckInput" />
               </p:NodeReference>
               <Pin Id="A7ORf1Kyj58MRO9mUqL378" Name="Input" Kind="InputPin" />
               <Pin Id="KdpjSQX0Vt6QHY7akkYqoG" Name="Slice" Kind="InputPin">
@@ -656,6 +646,7 @@
               <Pin Id="Lmx9dRRfEa7QbK2uPyCKVP" Name="Output" Kind="OutputPin" />
               <Pin Id="Fs4zF3iGgk5MmR3XjLasZ8" Name="Shape" Kind="OutputPin" />
             </Node>
+            <Pad Id="N8H3xEFVcQTO25PUinpI7Z" Comment="% Complete" Bounds="212,164,35,15" ShowValueBox="true" isIOBox="true" />
           </Canvas>
           <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
             <Fragment Id="MRFnVwHDf0WOO7H3jKbCxI" Patch="ESJZDDS0I02LAWDOx9RJVV" Enabled="true" />
@@ -698,11 +689,13 @@
           <Link Id="LM36SlzXKoRMT2w3rrZ1nc" Ids="V8mPUD4AqMbOPT6TfwAQ1M,AcH9C99gQLnO5enVrxMpK1" />
           <Link Id="Eba9AirPhiWMvtVfGBWHAK" Ids="OhxL6E3W9MzM7yxG3QvTIA,EZRchmjKjFtNUDvVzAdaOr" />
           <Link Id="KBAesqJNdQTOCSpz9UcMto" Ids="EZRchmjKjFtNUDvVzAdaOr,IJoIPVYLD9pOCYA86ieSlv" />
-          <Link Id="ViFFaoqnWzyOifZZZkHfQX" Ids="CgcNNlDdPffQTPCZQEQLG9,A7ORf1Kyj58MRO9mUqL378" />
           <Link Id="KcTly5CodMmLrUrBVbj0GM" Ids="Lmx9dRRfEa7QbK2uPyCKVP,TgGSyhlSR9XNbYwQIfv6rP" />
           <Link Id="CzkSjMUMoGWMqUZMta7pPy" Ids="VdBn2oUbLj1LYsycFjyeXE,BTzagg1uwCmPSOPPAMC6Dv" />
           <Link Id="Ao3kwzBhjlkLoHQkf8QcZr" Ids="CgcNNlDdPffQTPCZQEQLG9,OiOPUlblydTM0Qfv9nPFOW" />
-          <Link Id="CZkuUvdjy0MMmR5C3oNrgU" Ids="VdBn2oUbLj1LYsycFjyeXE,JB9q9lN7zgnP5uDhHQcY3Y" />
+          <Link Id="R7SiZf8TXJ5QMoDXsQdx3z" Ids="BjzPKwGAvuHLUBWBu5VHTk,N8H3xEFVcQTO25PUinpI7Z" />
+          <Link Id="C0CC9NH4ca8PJsXquJJBKQ" Ids="CgcNNlDdPffQTPCZQEQLG9,A7ORf1Kyj58MRO9mUqL378" />
+          <Link Id="KhVaw6xSYPMNDFcOVr9r6N" Ids="VdBn2oUbLj1LYsycFjyeXE,JB9q9lN7zgnP5uDhHQcY3Y" />
+          <Link Id="K1leD2ID6QXOdgPywLQErc" Ids="Fs4zF3iGgk5MmR3XjLasZ8,GHuk7e1Dy20NFdi70CTHg5" />
         </Patch>
       </Node>
     </Canvas>

@@ -158,7 +158,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="DropOut" />
               </p:NodeReference>
-              <Pin Id="OOtQwb8KMEKN3E6SeAklnc" Name="Operand" Kind="InputPin" />
+              <Pin Id="EfT99NTka0fPbxrs7pGNNs" Name="Input" Kind="InputPin" />
               <Pin Id="QiX8OL0LiPaMdWAl9QFPYV" Name="Dropout Rate" Kind="InputPin" DefaultValue="0.199999988079071">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Float64" />
@@ -176,6 +176,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Linear" />
                 <CategoryReference Kind="Category" Name="Layers" NeedsToBeDirectParent="true" />
+                <PinReference Kind="InputPin" Name="Output Dim" />
               </p:NodeReference>
               <Pin Id="UxfeR1GCHqXOHyRUA3WH34" Name="Input" Kind="InputPin" />
               <Pin Id="RxOtGsrquC4LSK8SsL0nOy" Name="Output Dim" Kind="InputPin" />
@@ -224,7 +225,7 @@
                 <Choice Kind="ProcessAppFlag" Name="SquaredError" />
               </p:NodeReference>
               <Pin Id="B69TQb50LdMQPjM6VAp3gV" Name="Prediction" Kind="InputPin" />
-              <Pin Id="I8VL0SLklciLfXf9b5D54g" Name="Targets" Kind="InputPin" />
+              <Pin Id="VfsorP8GyZBMKOLY0PDVzl" Name="Target" Kind="InputPin" />
               <Pin Id="CWcXmlgzKR8Nc2bTxXM7sb" Name="Output" Kind="OutputPin" />
             </Node>
             <Pad Id="QjOYwywW27VO98jRPXHpSF" Comment="Iteration Count" Bounds="187,113,35,15" ShowValueBox="true" isIOBox="true" Value="8000">
@@ -306,9 +307,9 @@
               <ControlPoint Id="RNiwMTkclj9QDreKc8NNj1" Bounds="343,130" Alignment="Top" />
             </Node>
             <Node Bounds="335,383,46,19" Id="LCFcqXQQaHPMiwX25DKupJ">
-              <p:NodeReference LastCategoryFullName="VLMLInternal.DataIO.DataInput.SequenceIn" LastSymbolSource="CNTK_DataIO.vl">
+              <p:NodeReference LastCategoryFullName="VLMLInternal.DataIO.DataInput.Sequence" LastSymbolSource="CNTK_DataIO.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="DataIn (Float)(Seq)" />
+                <Choice Kind="ProcessAppFlag" Name="DataSeqIn (Float)" />
               </p:NodeReference>
               <Pin Id="Drx0zAbTNqWNEUw7X412HF" Name="Values" Kind="InputPin" />
               <Pin Id="IL6TSaOjqhXNVRiiq4fOq8" Name="Sample Size" Kind="InputPin" />
@@ -363,7 +364,7 @@
               </p:TypeAnnotation>
             </Pad>
             <Overlay Id="Dsk0AKV9dG5LbXeVW4wKv2" Name="Network" Bounds="215,487,269,247" FillColor="#E6EAEFFF" />
-            <Pad Id="PJkv4lKz7B0O3AmqV4vbSv" Comment="Train" Bounds="769,824,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <Pad Id="PJkv4lKz7B0O3AmqV4vbSv" Comment="Train" Bounds="769,824,35,35" ShowValueBox="true" isIOBox="true" Value="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -399,9 +400,9 @@
               </p:TypeAnnotation>
             </Pad>
             <Node Bounds="1072,1007,46,19" Id="Kj2BCyUjZg5L1aWmAS3Nl9">
-              <p:NodeReference LastCategoryFullName="VLMLInternal.DataIO.DataInput.SequenceIn" LastSymbolSource="CNTK_DataIO.vl">
+              <p:NodeReference LastCategoryFullName="VLMLInternal.DataIO.DataInput.Sequence" LastSymbolSource="CNTK_DataIO.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="DataIn (Float)(Seq)" />
+                <Choice Kind="ProcessAppFlag" Name="DataSeqIn (Float)" />
               </p:NodeReference>
               <Pin Id="IH1DmaBCx0lNSxe0rPaDK0" Name="Values" Kind="InputPin" />
               <Pin Id="CFv7H1Vi7KLORzglpFj8uP" Name="Sample Size" Kind="InputPin" />
@@ -1701,7 +1702,6 @@
           <Link Id="SllrAy0uS1SNGFK0PeJUIF" Ids="PpgKUxLq6lkMEVEGXUeVAG,QLQi8LERH5GNzfuT7pm2JQ" />
           <Link Id="Hl0ucMcl4yvMgV8H88XTwi" Ids="QLQi8LERH5GNzfuT7pm2JQ,Ki1QimT5DY9Obkk6gkuQ7Q" />
           <Link Id="LLCAb5F8ij7MDGVsVfDyO9" Ids="VfH1p1VvKdmMyCMwyMDvWs,B69TQb50LdMQPjM6VAp3gV" />
-          <Link Id="PQO8fxTznKPLAIXqhPXOBp" Ids="PGdLU6QBWwUOVHNeQKlPPg,I8VL0SLklciLfXf9b5D54g" />
           <Link Id="A2zPzW7LHBdL3JlYiwRVWI" Ids="EaZnGTHfIU9MzKY5DPdWQl,IL6TSaOjqhXNVRiiq4fOq8" />
           <Link Id="Gy1yUlchPUhPhDx7kb4meq" Ids="CnFMIFvGsOTQK4x6CK7x1W,ElmX3awgjPgN80lL2JIt7t" />
           <Link Id="H1b50dXq2epQWgRjqAleCi" Ids="VGKMXdEIsnMLqjN6GQTTHF,MIy3ixAPSfSNNT0LdBoHrm" />
@@ -1717,7 +1717,6 @@
           <Link Id="EvYjrXUUJ2NPxSRSg7ac4G" Ids="Se7FuiW8y2wMbmcwOCwm2Q,PaffplDMGVuMHXmHw1Jyoq" />
           <Link Id="G0G3JSholaWMbna0RE2A6m" Ids="E9OjkaZOZa4QHtdElrcNFg,BvagwJHyWuHPgor6Z4zggb,CnqwSC8x6YaOf6qw9dx0uY" />
           <Link Id="KKeKhyt5tvnMurOR8Sluke" Ids="PKKS3QXkv72PbmHHO9ki7x,QcvKvakAL7PMbQp9kS0dSq" />
-          <Link Id="NA2arXGJ1ShMArPOkWkTzk" Ids="UISD006q4t4LlHWu5xGapE,OOtQwb8KMEKN3E6SeAklnc" />
           <Link Id="NLvoazdo4TXNcx88w7XllB" Ids="UISD006q4t4LlHWu5xGapE,OO9oP5x4m88L3NhO8MDvsI" />
           <Link Id="E35NES1Cy54N7fGOTmrW5a" Ids="EToe4rlLkVGNOpcgaOnl6b,NVrCEjd1JidLRnZM5VwK10" />
           <Link Id="QTjiQ1ZAwGgPMQT627j6JZ" Ids="PJkv4lKz7B0O3AmqV4vbSv,SeNWmsWm42cMDluHBWBCYr" />
@@ -1736,6 +1735,8 @@
           <Link Id="IpqWpFShZyPL1AGt1vFEKu" Ids="O1UqWbF6llcPQdkSMY48e0,AVNE3lEV40UPiIPYA98upH" />
           <Link Id="DnyWxrBmiYyLez08yQT613" Ids="KDiWO2HDtGKOK9kCeMzO1C,F51nw1S2rmYPBGL6WOYDgC" />
           <Link Id="OvGzyLQFLO4OB8Bn4TzE9S" Ids="LqAtXWKQG8NQGrSVH4oYzQ,LnPaAR86RNQPrc8jMo0gi9" />
+          <Link Id="PLjRCA4wrO7ModS17x3d7A" Ids="UISD006q4t4LlHWu5xGapE,EfT99NTka0fPbxrs7pGNNs" />
+          <Link Id="FDat4dNyGlVK97xXbpIxVG" Ids="PGdLU6QBWwUOVHNeQKlPPg,VfsorP8GyZBMKOLY0PDVzl" />
         </Patch>
       </Node>
     </Canvas>

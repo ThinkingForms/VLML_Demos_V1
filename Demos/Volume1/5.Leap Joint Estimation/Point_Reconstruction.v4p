@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
-   <PATCH nodename="C:\Users\H\Documents\Praxis\hayds_vl-packs\CNTK\VLML_Demos\Demos\Volume1\Leap Joint Estimation\Point_Reconstruction.v4p" systemname="Point_Reconstruction" filename="C:\Users\H\Desktop\Bimbam\Point_Reconstruction.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\Users\H\Documents\Praxis\hayds_vl-packs\CNTK\VLML_Demos\Demos\Volume1\5.Leap Joint Estimation\Point_Reconstruction.v4p" systemname="Point_Reconstruction" filename="C:\Users\H\Desktop\Bimbam\Point_Reconstruction.v4p" scrollx="0" scrolly="360">
    <BOUNDS type="Window" left="375" top="0" width="14115" height="10980">
    </BOUNDS>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="0">
@@ -333,7 +333,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5115" top="1560" width="2865" height="1245">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|The model will only take 5 joints as an input and try to learn where the other 15 should be. This example can take a while to train as I haven&apos;t figured out the best approach to it.|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|The model will only take 5 joints as an input and try to learn where the other 15 should be. This example can take a while to train as I haven&apos;t figured out the best network for it.|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -541,7 +541,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2595" top="9330" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="18105" top="11865" width="6240" height="5085">
+   <BOUNDS type="Window" left="20685" top="11700" width="6240" height="5085">
    </BOUNDS>
    <PIN pinname="View" visible="1">
    </PIN>

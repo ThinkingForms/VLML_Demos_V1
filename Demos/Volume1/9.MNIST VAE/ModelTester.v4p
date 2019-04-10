@@ -169,6 +169,8 @@
    </PIN>
    <PIN pinname="Values Bin Size" visible="-1" pintype="Input" slicecount="1" values="-1">
    </PIN>
+   <PIN pinname="Output Bin Size" visible="-1" pintype="Output">
+   </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="1" dstpinname="Filepath">
    </LINK>
