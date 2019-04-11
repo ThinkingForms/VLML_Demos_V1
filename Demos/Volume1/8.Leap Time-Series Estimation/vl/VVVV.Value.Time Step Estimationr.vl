@@ -26,8 +26,8 @@
             </Pin>
             <Pin Id="F1zvUpxuioOPpEs9LncNv4" Name="EstimatIon" Kind="OutputPin" Bounds="174,1310" />
             <Pin Id="JGn74792mJ6QHsCxrGl3J1" Name="Labels" Kind="OutputPin" Bounds="346,349" />
-            <Pin Id="Vm13jBoWRxyOEkWo5kaAQV" Name="Filepath" Kind="InputPin" Bounds="724,1688" />
             <Pin Id="RGRgbYhDaAgNZL5Q1aYJ2p" Name="Model Output" Kind="OutputPin" Bounds="799,1295" />
+            <Pin Id="Vm13jBoWRxyOEkWo5kaAQV" Name="Filepath" Kind="InputPin" Bounds="724,1688" />
             <Pin Id="FTJwHmmxvoCPZReXuBV9mp" Name="Labels Out" Kind="OutputPin" Bounds="1514,565" />
           </Patch>
           <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi" CanvasType="Group">
@@ -40,27 +40,22 @@
               <Pin Id="Ja0Q6UQ1lqsLoVwDV1TEjl" Name="Model" Kind="InputPin" />
               <Pin Id="TiOYQreXm5hLIIGCiaWHao" Name="Loss Function" Kind="InputPin" />
               <Pin Id="OkIUFUOl1EHN8gV8qFELca" Name="Evaluation Function" Kind="InputPin" />
-              <Pin Id="SZ70pBlImWsPHxTEIztb8y" Name="Learning Rate" Kind="InputPin" />
               <Pin Id="JgpijahpIsyQbNMDHq0Bvl" Name="Minibatch Size" Kind="InputPin" />
-              <Pin Id="MUIRXCw2t2vOo4eFEFqPri" Name="Train" Kind="InputPin" />
-              <Pin Id="Cl3yjuFDvaGOBgsB5ShXc6" Name="Reset" Kind="InputPin" />
-              <Pin Id="IdYersOJSRJQH8sQQVVfQA" Name="Debug Input" Kind="InputPin" />
-              <Pin Id="TwpzBuBrlD9L8untKbMGoz" Name="Async" Kind="InputPin" />
+              <Pin Id="SZ70pBlImWsPHxTEIztb8y" Name="Learning Rate" Kind="InputPin" />
               <Pin Id="T1tN7rwCVExQdQf9WaFoRU" Name="Momentum Schedule" Kind="InputPin" />
+              <Pin Id="MUIRXCw2t2vOo4eFEFqPri" Name="Train" Kind="InputPin" />
+              <Pin Id="IdYersOJSRJQH8sQQVVfQA" Name="Debug Input" Kind="InputPin" />
               <Pin Id="DwWOeDsiM69PoEemsf1ah9" Name="Run Debug" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Boolean" />
                 </p:TypeAnnotation>
               </Pin>
+              <Pin Id="Cl3yjuFDvaGOBgsB5ShXc6" Name="Reset" Kind="InputPin" />
               <Pin Id="HggK3a0juMDQb9Lk9Hrzss" Name="Stats" Kind="OutputPin" />
-              <Pin Id="Uo7qgpkZ3Y8P7drXtLD4ZS" Name="Debug Outputs" Kind="OutputPin" />
+              <Pin Id="TenviplUmpxMbWwiQoFvaF" Name="Debug Outputs" Kind="OutputPin" />
               <Pin Id="JtmwGorV4HpMTe96ACiisP" Name="Model Output" Kind="OutputPin" />
-              <Pin Id="NPg1a0aegTAMYfbHkK8Hx8" Name="Evaluation Average" Kind="OutputPin" />
-              <Pin Id="IKZ2YAMsTOyN7Jvfy31Ocf" Name="Loss Value" Kind="OutputPin" />
-              <Pin Id="NhdfJO5mJoRLSF1RkoINNM" Name="Epochs" Kind="OutputPin" />
-              <Pin Id="K7UfOuwQaVKM9coNGiXbuW" Name="Position" Kind="OutputPin" />
             </Node>
-            <Pad Id="SQjeDJg7os6PZOmA5rnWqr" Comment="Learning Rate" Bounds="701,1505,51,19" ShowValueBox="true" isIOBox="true" Value="0.00100000004749745">
+            <Pad Id="SQjeDJg7os6PZOmA5rnWqr" Comment="Learning Rate" Bounds="744,1436,51,19" ShowValueBox="true" isIOBox="true" Value="0.00100000004749745">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float64" />
               </p:TypeAnnotation>
@@ -68,12 +63,12 @@
                 <p:precision p:Type="Int32">5</p:precision>
               </p:ValueBoxSettings>
             </Pad>
-            <Pad Id="Dxv154XVtIhNlDqteZDXJH" Comment="Minibatch Size" Bounds="731,1529,24,19" ShowValueBox="true" isIOBox="true" Value="24">
+            <Pad Id="Dxv154XVtIhNlDqteZDXJH" Comment="Minibatch Size" Bounds="707,1408,24,19" ShowValueBox="true" isIOBox="true" Value="24">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="DiVdzkHwncwQWcthEG0TzT" Comment="Train" Bounds="769,1389,58,55" ShowValueBox="true" isIOBox="true" Value="False">
+            <Pad Id="DiVdzkHwncwQWcthEG0TzT" Comment="Train" Bounds="813,1470,35,35" ShowValueBox="true" isIOBox="true" Value="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -316,7 +311,7 @@
               <Pin Id="LDWd1sBI8mQLXfq7zbH47T" Name="Filepath" Kind="InputPin" />
               <Pin Id="PSJpDmmIgVNPFn5JeUbqLY" Name="Save" Kind="InputPin" />
             </Node>
-            <ControlPoint Id="LZST6IFtJRZNONDk8u6g1H" Bounds="820,1643" />
+            <ControlPoint Id="LZST6IFtJRZNONDk8u6g1H" Bounds="824,1660" />
             <Pad Id="FjnHTk87w9UQNq3EBg5lqF" Comment="Save" Bounds="902,1665,40,19" ShowValueBox="true" isIOBox="true" Value="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
@@ -356,7 +351,7 @@
               <Pin Id="ACdHnWHQrNKOy9PTE6U1fa" Name="Output" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="BzRLPfc7GcZODHf1qQ1ux4" Bounds="658,1856" />
-            <Pad Id="FQeGmOGOOWMP0nYjjSUeMH" Comment="Reset Gradient" Bounds="909,1506,40,19" ShowValueBox="true" isIOBox="true" Value="False">
+            <Pad Id="FQeGmOGOOWMP0nYjjSUeMH" Comment="Reset Gradient" Bounds="919,1514,40,19" ShowValueBox="true" isIOBox="true" Value="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -1289,7 +1284,7 @@
               <Pin Id="Ijy9fRJWyOiMOhJeSw0O6l" Name="Simulate" Kind="InputPin" />
               <Pin Id="BySVivDK8ePM4P9gU9iZ18" Name="Output" Kind="OutputPin" />
             </Node>
-            <Pad Id="DMTqeOtbBOuNyDECNVOQOS" Comment="Stats" Bounds="713,1758,146,73" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="DMTqeOtbBOuNyDECNVOQOS" Comment="Stats" Bounds="570,1688,146,73" ShowValueBox="true" isIOBox="true" />
             <Pad Id="GUo75b7BmXdO9RKOBNxe6L" SlotId="VFQ8UcYguXEOIfo0ijsTNM" Bounds="521,-247" />
             <Pad Id="KtgJqb6LbgyOBoOdR5IqQb" SlotId="VFQ8UcYguXEOIfo0ijsTNM" Bounds="1041,1200" />
             <Overlay Id="QcLyD95cSJGLXkBGoq6R4i" Name="Setting Up Your Input data" Bounds="302,-372,546,461" />
@@ -2536,7 +2531,7 @@
               <Pin Id="FgTCDBHQxcnQQIpmIOhYk1" Name="Operand" Kind="InputPin" />
               <Pin Id="QouPcomdJl2MVTTFpz9mwQ" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="599,763,39,19" Id="KZiTXKDhrnCO5xbnL1dHOz">
+            <Node Bounds="615,762,39,19" Id="KZiTXKDhrnCO5xbnL1dHOz">
               <p:NodeReference LastCategoryFullName="VLMLInternal.MathOps.Activation" LastSymbolSource="CNTK_Operations.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="ReLU" />
@@ -2600,7 +2595,6 @@
           <Link Id="FHahFpwkNGZLTZjziK3rr8" Ids="HggK3a0juMDQb9Lk9Hrzss,DMTqeOtbBOuNyDECNVOQOS" />
           <Slot Id="VFQ8UcYguXEOIfo0ijsTNM" Name="live leap data" />
           <Link Id="F9lxRWr5XMfMNpogiVlxWD" Ids="J7pDH70jUIBLy35ESzIhPt,GUo75b7BmXdO9RKOBNxe6L" />
-          <Link Id="TwWpaKhe2XDNVrCxbZqLtW" Ids="Uo7qgpkZ3Y8P7drXtLD4ZS,Lzj7ZoGBu3gPmpt8Gs7xRs" />
           <Link Id="G3ItPsDzZ8LMmyAQK19VoI" Ids="KaoXwxxfBHSQYdf1uiAOFB,IdYersOJSRJQH8sQQVVfQA" />
           <Slot Id="Tnge6I5cH1fNMoKjnlY3or" Name="features">
             <p:TypeAnnotation>
@@ -2720,6 +2714,7 @@
           <Link Id="LSwBCZSDjgWOa5YJsjUzXq" Ids="QouPcomdJl2MVTTFpz9mwQ,Jmz30UPRyImMxZZ5AaDxcd" />
           <Link Id="K4EPQzNtWBjNiOsQ55vtRA" Ids="ViEBDIAvTZoPpqFNnXevYl,OhmN8jExKVuOicKS8e46l3" />
           <Link Id="INSwZrqfycqNtdj3kg2RKa" Ids="QouPcomdJl2MVTTFpz9mwQ,MzJrYk7bwTUL5vS7bvCbAF" />
+          <Link Id="M9PNnzVv2sRMQBhCnwRZWm" Ids="TenviplUmpxMbWwiQoFvaF,Lzj7ZoGBu3gPmpt8Gs7xRs" />
         </Patch>
       </Node>
       <!--

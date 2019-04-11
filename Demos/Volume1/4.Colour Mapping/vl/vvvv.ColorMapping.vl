@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="HfT5Iexo3gdQOOVFM5yk9v" LanguageVersion="2019.1.0-0150-g4778b4a38a" Version="0.128">
+<Document xmlns:p="property" Id="HfT5Iexo3gdQOOVFM5yk9v" Version="0.99">
   <Patch Id="OxAnQsEGMETPkTf7O608gu">
     <Canvas Id="K0fhdk06fZGL0AzQfj2qUK" DefaultCategory="VVVV.CC" CanvasType="FullCategory">
       <!--
@@ -26,7 +26,7 @@
                   <Choice Kind="TypeFlag" Name="Integer32" />
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="OvnmT99372JLxUSnCV8bsA" Name="Activation" Kind="InputPin">
+              <Pin Id="OvnmT99372JLxUSnCV8bsA" Name="Activation" Kind="InputPin" DefaultValue="Relu">
                 <p:TypeAnnotation LastCategoryFullName="CNTK.VL.Helpers.SetActivations" LastSymbolSource="CNTK.VL.Helpers.dll">
                   <Choice Kind="TypeFlag" Name="Activations" />
                 </p:TypeAnnotation>
@@ -57,7 +57,7 @@
                   <Choice Kind="TypeFlag" Name="Integer32" />
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="CCWZa44LqWlN39Jbmlnvki" Name="Activation" Kind="InputPin">
+              <Pin Id="CCWZa44LqWlN39Jbmlnvki" Name="Activation" Kind="InputPin" DefaultValue="Relu">
                 <p:TypeAnnotation LastCategoryFullName="CNTK.VL.Helpers.SetActivations" LastSymbolSource="CNTK.VL.Helpers.dll">
                   <Choice Kind="TypeFlag" Name="Activations" />
                 </p:TypeAnnotation>
@@ -141,18 +141,18 @@
               <Pin Id="E3oEEpszFJDMp6Qqya58R4" Name="Model" Kind="InputPin" />
               <Pin Id="UHkOuLCM7nRNGltOMA9Z50" Name="Loss Function" Kind="InputPin" />
               <Pin Id="TM0K8O2Wds7O7j2bEKI2ug" Name="Evaluation Function" Kind="InputPin" />
-              <Pin Id="SM8qdtPSD6tQdoFKzBPwlA" Name="Learning Rate" Kind="InputPin" />
               <Pin Id="C48GEYvjCBmLxAKaX0LsR0" Name="Minibatch Size" Kind="InputPin" DefaultValue="0">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Integer32" />
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="Kan1kc9qUvbNpK3XxxZQDU" Name="Train" Kind="InputPin" />
-              <Pin Id="Rs6Dlj2YqO9N2f3CVAvlXW" Name="Async" Kind="InputPin">
+              <Pin Id="SM8qdtPSD6tQdoFKzBPwlA" Name="Learning Rate" Kind="InputPin" />
+              <Pin Id="NIh1Z2fLaFPPS4mwzfuQYb" Name="Momentum Schedule" Kind="InputPin" DefaultValue="0.899999976158142">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                  <Choice Kind="TypeFlag" Name="Boolean" />
+                  <Choice Kind="TypeFlag" Name="Float64" />
                 </p:TypeAnnotation>
               </Pin>
+              <Pin Id="Kan1kc9qUvbNpK3XxxZQDU" Name="Train" Kind="InputPin" />
               <Pin Id="SeWlSFnJrAXN1uAvl578Ns" Name="Reset" Kind="InputPin" />
               <Pin Id="ScPhC4KEsZML3U4L5c8MIN" Name="Run Debug" Kind="InputPin" DefaultValue="True">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -161,16 +161,11 @@
               </Pin>
               <Pin Id="Hv9xyx2slw4N2LMrF0672e" Name="Debug Input" Kind="InputPin" />
               <Pin Id="TlB9rZ84VwxOt5InrAC7im" Name="Printing Interval" Kind="InputPin" />
-              <Pin Id="NIh1Z2fLaFPPS4mwzfuQYb" Name="Momentum Schedule" Kind="InputPin" DefaultValue="0.899999976158142">
-                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                  <Choice Kind="TypeFlag" Name="Float64" />
-                </p:TypeAnnotation>
-              </Pin>
               <Pin Id="MgZ20STXc8dNzYW2dupwiT" Name="Stats" Kind="OutputPin" />
-              <Pin Id="O7HkMs4ziebM9xMolFsmRk" Name="Debug Outputs" Kind="OutputPin" />
               <Pin Id="Tz9jcLs2jKgN6qE8QBEv1h" Name="Model Output" Kind="OutputPin" />
               <Pin Id="GSfSoe3IFkGQCHu9ddNarq" Name="Loss Value" Kind="OutputPin" />
               <Pin Id="NHIryB6vj8oQUb7Uh7KVw9" Name="Evaluation Average" Kind="OutputPin" />
+              <Pin Id="O7HkMs4ziebM9xMolFsmRk" Name="Debug Outputs" Kind="OutputPin" />
               <Pin Id="MUpLZNl1e96LLgdHHc1XXr" Name="Epochs" Kind="OutputPin" />
               <Pin Id="B4CwrGq0cohLPcMspUH8vd" Name="Sample Count" Kind="OutputPin" />
             </Node>
@@ -323,7 +318,11 @@
                   <Choice Kind="TypeFlag" Name="Integer32" />
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="GQ79VwKfmRiPbr67kfKv6E" Name="Activation" Kind="InputPin" />
+              <Pin Id="GQ79VwKfmRiPbr67kfKv6E" Name="Activation" Kind="InputPin" DefaultValue="Sigmoid">
+                <p:TypeAnnotation LastCategoryFullName="CNTK.VL.Helpers.SetActivations" LastSymbolSource="CNTK.VL.Helpers.dll">
+                  <Choice Kind="TypeFlag" Name="Activations" />
+                </p:TypeAnnotation>
+              </Pin>
               <Pin Id="ThDItDLoevlNxP2VbSiHZ6" Name="Name" Kind="InputPin" />
               <Pin Id="FFjWT8o9DelNgZmYcnLb2z" Name="Output" Kind="OutputPin" />
             </Node>
@@ -481,18 +480,10 @@
               </p:TypeAnnotation>
             </Pad>
             <ControlPoint Id="SYJx6Imz3jpPxIPqVU3nvu" Bounds="505,1066" />
-            <Overlay Id="AKOxgJ2hC32NfgWaKqVFyr" Name="Inputs" Bounds="237,-128,425,209">
-              <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
-            </Overlay>
-            <Overlay Id="BvuxX3eIsfdP1JzPnsD4Qq" Name="Network" Bounds="262,162,317,528">
-              <p:ColorIndex p:Type="Int32">1</p:ColorIndex>
-            </Overlay>
-            <Overlay Id="LOFBopJvjV0PJkYMC3JRmT" Name="Training Area" Bounds="262,1028,422,161">
-              <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
-            </Overlay>
-            <Overlay Id="QwkfluSX8D2OBWOfxU7rvX" Name="Cost and Loss Evaluation" Bounds="257,793,420,123">
-              <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
-            </Overlay>
+            <Overlay Id="AKOxgJ2hC32NfgWaKqVFyr" Name="Inputs" Bounds="237,-128,425,209" />
+            <Overlay Id="BvuxX3eIsfdP1JzPnsD4Qq" Name="Network" Bounds="262,162,317,528" />
+            <Overlay Id="LOFBopJvjV0PJkYMC3JRmT" Name="Training Area" Bounds="262,1028,422,161" />
+            <Overlay Id="QwkfluSX8D2OBWOfxU7rvX" Name="Cost and Loss Evaluation" Bounds="257,793,420,123" />
             <Node Bounds="286,9,125,13" Id="GKPAQ5ROBXrLLfsC0cQhUa">
               <p:NodeReference LastCategoryFullName="VLMLInternal.DataIO.DataInput" LastSymbolSource="CNTK_DataIO.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -655,6 +646,9 @@
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pad>
+            <ControlPoint Id="D978hPZrUFqO0eGwt1xYGM" Bounds="362,283" />
+            <ControlPoint Id="VsYEIdNcPPSPGiZbEqWUAM" Bounds="347,488" />
+            <ControlPoint Id="QTzahSMQeOzNeScG6v4HnU" Bounds="311,672" />
           </Canvas>
           <Patch Id="OfGMaWDAGVnOvSjJ2X6mre" Name="Create" />
           <Patch Id="Jnr6smg6daXP5FcmMJuYd4" Name="Update" ManuallySortedPins="true">
@@ -691,7 +685,6 @@
             <Fragment Id="UzqsuWgbN6YO393VINv2a6" Patch="Jnr6smg6daXP5FcmMJuYd4" Enabled="true" />
           </ProcessDefinition>
           <Link Id="GipTWwL5exGNou6YEn9gPP" Ids="BkYDWoDKsbtPPrI3z9L5wC,H0Lxf9y6K6mQd01ZuB0Gdr" />
-          <Link Id="C2d3xZKmXDhMZSCyxJLjVp" Ids="ORUNDKTuqkoQAAfGH5AqQ2,QS7xKAlPhIDL2M7e1LSOLh" />
           <Link Id="UUvUdo1pav8OPFB5qBIYMs" Ids="KYKyqSyCM03MOURdOwkDA0,CnMoQ1VHuAWOcwa4ESbC6A" />
           <Link Id="El5vVAGWmdyNZBEuV1VtuM" Ids="ImNoZnuGiPQNzWWVCwFXx6,SFUcS6wVETANYeyEhMfFs2" IsHidden="true" />
           <Link Id="GJhDDfVUnXGNaw9Prs2w1g" Ids="LYCCW1EzKCdNWWTiVwJsQT,TRkyieXv4G0LUbqo0cuIkw" IsHidden="true" />
@@ -705,7 +698,6 @@
           <Link Id="DgGglZq6PIrOhjNjUOIyXX" Ids="EINQaS1NCQyMeGZXmpmS1B,F19BL4IQfnfMEDUA9BZT2p" />
           <Link Id="Qyq4qCsUZjLPeVuCtKSqHx" Ids="BAyzcBVWvGQLqMEaStqOsS,SHuLMlDLftzLQE8uXDlhKA" IsHidden="true" />
           <Link Id="K48k6XkeKmCPPnZRWWqOhq" Ids="TTFyfIpAtugLLYw0SMgzzV,MedihmegAYeMaLYXaWsdst" />
-          <Link Id="Gniuc5Y1llEO6kX8q0Fie3" Ids="Vji9wYo7AZLMdA9y39YnrN,JANndyOSRdsPhVjR0eIMKs" />
           <Link Id="QyNLNnFU8oXNhYjZ3FABFu" Ids="RrsZjuBTC7BQC0Q5mkZq1v,ThDItDLoevlNxP2VbSiHZ6" />
           <Link Id="BUeAEpUriYjMSuhDqyXQcN" Ids="PemFShoq8V3PMS8OqKSqTu,H4yiaCtb4yMOxcMKvybfpD" />
           <Link Id="NwAA3YMdcd7P0R7T6UaOC4" Ids="JJrIB6b6ZIVPXnXITh3gu4,FRUHnGnbZTuOjeGlKWDpRf" />
@@ -728,7 +720,6 @@
           <Link Id="RDpmm1cTb5JLc5vMEWxzKU" Ids="Rh79gnIOGB8PRN6Zlc0f4T,SDjR0mKrDydMXYYwW5v4Gr" />
           <Link Id="R8loWJwpUL3L4NF3cKQyrY" Ids="FFjWT8o9DelNgZmYcnLb2z,BShoHFF0WAjQTCdQQgZRSV" />
           <Link Id="KaFSe8pN3VmOZXjV85XEJg" Ids="PIzhte1xxwZPtAjWJ82rO6,UHkOuLCM7nRNGltOMA9Z50" />
-          <Link Id="J0FLuzwmfiYLDbBMMx5mSw" Ids="UoSunBTG7HOOz1EIx2b0kz,TTFyfIpAtugLLYw0SMgzzV" />
           <Link Id="H8Wi2bf7xR1OmRLC4RpCJm" Ids="N8UgnZw4MuUO7kPI202tOp,A2e6N8DDQhxQSbOO5M9LBw" IsHidden="true" />
           <Link Id="V1wSa8zajR8LbgbJNPD0jd" Ids="RYkXZHofgN8MTzHdZ85dJL,N8UgnZw4MuUO7kPI202tOp" />
           <Link Id="VyUEcke2CfGPcfS8G7xJJ4" Ids="TysdFsOGU1wPY3IPH0sly2,CtDUymVQiuTNuxXekGHXfz" />
@@ -742,6 +733,9 @@
           <Link Id="E1ZOOsI9BbmNEQFil5MqOC" Ids="I4AQZU2vyP7NiZlcJ9Rlb5,MglE2ORZY1GOaaOHUAw5Vs" />
           <Link Id="ElOcIRe78WfNTDSHhkrEXn" Ids="MXHFYnl4dGvONx71gSqTI4,Hv9xyx2slw4N2LMrF0672e" />
           <Link Id="Bs4bpXWfvRgMiY6vhwf5Zl" Ids="CJWJzfwPo8xOtzSieJ5w44,HhbtnEa4EbJQaOzm95gy4J" />
+          <Link Id="V3z6gYhpSd1NlnDyWQIMc0" Ids="TysdFsOGU1wPY3IPH0sly2,D978hPZrUFqO0eGwt1xYGM,QS7xKAlPhIDL2M7e1LSOLh" />
+          <Link Id="GGCwVbA2W4zQOxWK1GC4nE" Ids="BkYDWoDKsbtPPrI3z9L5wC,VsYEIdNcPPSPGiZbEqWUAM,JANndyOSRdsPhVjR0eIMKs" />
+          <Link Id="JdAtPrq60kNNcZ1DGvaH27" Ids="FFjWT8o9DelNgZmYcnLb2z,QTzahSMQeOzNeScG6v4HnU,TTFyfIpAtugLLYw0SMgzzV" />
         </Patch>
       </Node>
       <!--
@@ -768,6 +762,7 @@
               <Pin Id="E4281HHaCZ5NvGB6TrdRS3" Name="Model" Kind="InputPin" />
               <Pin Id="RZ5q5jF1k6cNracUGanOsN" Name="Input Variable" Kind="InputPin" />
               <Pin Id="KFZ1NUr45JJK9lqiWfp4eL" Name="Results" Kind="OutputPin" />
+              <Pin Id="BsstyowuvxZPJ9DlXcVV4k" Name="Shape" Kind="OutputPin" />
             </Node>
             <Node Bounds="516,297,105,13" Id="MxSSGwUyjjWNuiEtByz3pn">
               <p:NodeReference LastCategoryFullName="VLMLInternal.DataIO.DataInput" LastSymbolSource="CNTK_DataIO.vl">

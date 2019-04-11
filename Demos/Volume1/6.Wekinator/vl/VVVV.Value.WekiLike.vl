@@ -221,16 +221,15 @@
               <Pin Id="S1LNsE4M0WHO52oMyTLdB6" Name="Model" Kind="InputPin" />
               <Pin Id="Ac9JUMaR6eGQEeWe7DUt1K" Name="Loss Function" Kind="InputPin" />
               <Pin Id="B7lhtkL2nSVL9MQpFvdUlt" Name="Evaluation Function" Kind="InputPin" />
-              <Pin Id="Cl5MbK6T0cuMLYGCEHk17A" Name="Learning Rate" Kind="InputPin" />
               <Pin Id="DvwEQTGoyDKPegC7wCWK7q" Name="Minibatch Size" Kind="InputPin" DefaultValue="0">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Integer32" />
                 </p:TypeAnnotation>
               </Pin>
+              <Pin Id="Cl5MbK6T0cuMLYGCEHk17A" Name="Learning Rate" Kind="InputPin" />
               <Pin Id="UtjxuETGJXPOYa9YYPZnW5" Name="Train" Kind="InputPin" />
-              <Pin Id="NLRx8SU0ac1NnUaWrl6eRq" Name="Debug Input" Kind="InputPin" />
               <Pin Id="Rj0liJtx7AvQHQGSZvnQxH" Name="Reset" Kind="InputPin" />
-              <Pin Id="Bgn7ecanAiiPDVq195Ythr" Name="Async" Kind="InputPin" />
+              <Pin Id="NLRx8SU0ac1NnUaWrl6eRq" Name="Debug Input" Kind="InputPin" />
               <Pin Id="LaDOllRafQOL3RlibMmflN" Name="Run Debug" Kind="InputPin" DefaultValue="True">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Boolean" />
@@ -241,9 +240,8 @@
               <Pin Id="I9GaPTEsgGaPLyajb5NBIm" Name="Debug Outputs" Kind="OutputPin" />
               <Pin Id="TXewZAr8o8ULGeg5JwXZtd" Name="Model Output" Kind="OutputPin" />
               <Pin Id="QI8UPJGUtmBOHyyHiChETY" Name="Loss Value" Kind="OutputPin" />
-              <Pin Id="GnXktRhSnMfMQX7A0Tu4zb" Name="Evaluation Average" Kind="OutputPin" />
-              <Pin Id="VcdLma4Gm8YLfpxK5GjFUy" Name="Epochs" Kind="OutputPin" />
               <Pin Id="BO9MNM5aaJ5MsTP3BmyeZm" Name="Sample Count" Kind="OutputPin" />
+              <Pin Id="VcdLma4Gm8YLfpxK5GjFUy" Name="Epochs" Kind="OutputPin" />
             </Node>
             <Pad Id="Rj47MLNmNuuL4bQtYsAxvG" Comment="Learning Rate" Bounds="294,1015,45,19" ShowValueBox="true" isIOBox="true" Value="0.259999990463257">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">

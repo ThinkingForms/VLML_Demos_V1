@@ -20,8 +20,8 @@
             <Pin Id="NFysnZ3lSIpOgjbTIO4Y6L" Name="Model Output" Kind="OutputPin" Bounds="646,1093" />
             <Pin Id="UB0wFKHtoKzM5tUacuUmlx" Name="Stats" Kind="OutputPin" Bounds="532,1149" />
             <Pin Id="TonGx9nanSQNx9iCiM2uaG" Name="Directory" Kind="InputPin" Bounds="541,148" />
-            <Pin Id="ToJ6AW7rcyjN5DEN3tkmYn" Name="Loss Value" Kind="OutputPin" Bounds="680,1144" />
             <Pin Id="OaZXMRwa2UKL1H7ELZAfgc" Name="Train" Kind="InputPin" Bounds="852,895" />
+            <Pin Id="ToJ6AW7rcyjN5DEN3tkmYn" Name="Loss Value" Kind="OutputPin" Bounds="680,1144" />
           </Patch>
           <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi" CanvasType="Group">
             <Node Bounds="562,945,77,19" Id="Hsq0myfAyeGOW4lBYtXb8v">
@@ -42,32 +42,24 @@
               <Pin Id="TtRm5pwvs5iM06n3IL4vjN" Name="Model" Kind="InputPin" />
               <Pin Id="Exg7RzQgrJUPcwlw5iBw2I" Name="Loss Function" Kind="InputPin" />
               <Pin Id="IWJf1WzvoUbNNtsj3YfdLS" Name="Evaluation Function" Kind="InputPin" />
-              <Pin Id="FiJipk5OWInK9cOkVIHjGE" Name="Learning Rate" Kind="InputPin" />
               <Pin Id="HWY0jSXbqfENCFFmnbDBcT" Name="Minibatch Size" Kind="InputPin" />
+              <Pin Id="FiJipk5OWInK9cOkVIHjGE" Name="Learning Rate" Kind="InputPin" />
               <Pin Id="HsiG0lqlatkMAtNN268jKv" Name="Train" Kind="InputPin" />
-              <Pin Id="DkhiXakHytZQFAadvG45uY" Name="Debug Input" Kind="InputPin" />
               <Pin Id="PVAEe2aD62KNQ15F0e5isl" Name="Reset" Kind="InputPin" />
-              <Pin Id="NYNyFh7jMaQNYG1n6uehuc" Name="Async" Kind="InputPin" />
-              <Pin Id="Uqk22g2YSghLULCsqTd59S" Name="Run Debug" Kind="InputPin" />
-              <Pin Id="FE5wM5La4jyLgUDCssFMQA" Name="Printing Interval" Kind="InputPin" />
               <Pin Id="TJ31YdSyFkJMWlhNbjsbeQ" Name="Stats" Kind="OutputPin" />
-              <Pin Id="RBcdnGiJzVVLwBwXlBKWVM" Name="Debug Outputs" Kind="OutputPin" />
               <Pin Id="FTeTR5AgvQGNDwH1G1cvv2" Name="Model Output" Kind="OutputPin" />
               <Pin Id="RWydTMP0OhCP867BflkqTG" Name="Loss Value" Kind="OutputPin" />
-              <Pin Id="CF0SneZBcy5LLaMMODM7Xz" Name="Evaluation Average" Kind="OutputPin" />
-              <Pin Id="IOoKgBCPiZkN0in1uOGEFy" Name="Epochs" Kind="OutputPin" />
-              <Pin Id="OorzXlEjjg0QFR3QQHAkyk" Name="Sample Count" Kind="OutputPin" />
             </Node>
-            <Pad Id="MbYSjQGePcXLuPdLLVbqN9" Comment="Minibatch Size" Bounds="666,1058,24,19" ShowValueBox="true" isIOBox="true" Value="12">
+            <Pad Id="MbYSjQGePcXLuPdLLVbqN9" Comment="Minibatch Size" Bounds="684,1044,24,19" ShowValueBox="true" isIOBox="true" Value="12">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pad>
             <ControlPoint Id="T6taGsih82lLDWb130KA35" Bounds="530,1146" />
-            <ControlPoint Id="Msz4PKIqeAbPZtQLGZ8NDW" Bounds="684,1146" />
+            <ControlPoint Id="Msz4PKIqeAbPZtQLGZ8NDW" Bounds="834,1141" />
             <ControlPoint Id="ElO6aF4rFyTQM9VxIcfK5q" Bounds="366,950" />
-            <ControlPoint Id="NyrdPy3kRTWQCF4XqeUIby" Bounds="839,1020" />
-            <Pad Id="N3Mhq1SKNHyQV5gBpq8IPp" Comment="Learning Rate" Bounds="633,1029,77,20" ShowValueBox="true" isIOBox="true" Value="0.00999999977648258">
+            <ControlPoint Id="NyrdPy3kRTWQCF4XqeUIby" Bounds="806,1035" />
+            <Pad Id="N3Mhq1SKNHyQV5gBpq8IPp" Comment="Learning Rate" Bounds="735,1018,77,20" ShowValueBox="true" isIOBox="true" Value="0.00999999977648258">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float64" />
               </p:TypeAnnotation>
@@ -82,7 +74,7 @@
             <Overlay Id="EPeLm0c0z5QLuqTHbnABhS" Name="Loss" Bounds="491,914,217,68" FillColor="#DDE1FFFF" />
             <Overlay Id="BxQQHpmt8TrLmetKj7PIC4" Name="Training" Bounds="492,1011,400,154" />
             <Pad Id="AGn0KDwFMt2PUqBEZdwqSW" Comment="y" Bounds="906,420,400,20" isIOBox="true" />
-            <Pad Id="NQgKX8WsoOIPrOKGHshzDZ" Comment="Reset" Bounds="770,1080,40,19" ShowValueBox="true" isIOBox="true" Value="False">
+            <Pad Id="NQgKX8WsoOIPrOKGHshzDZ" Comment="Reset" Bounds="855,1088,40,19" ShowValueBox="true" isIOBox="true" Value="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -91,7 +83,7 @@
                 <p:showbutton p:Type="Boolean">true</p:showbutton>
               </p:ValueBoxSettings>
             </Pad>
-            <Pad Id="QoBZE66oRJ4OvsXPu1YVky" Comment="Train" Bounds="839,1056,38,41" ShowValueBox="true" isIOBox="true">
+            <Pad Id="QoBZE66oRJ4OvsXPu1YVky" Comment="Train" Bounds="806,1071,38,41" ShowValueBox="true" isIOBox="true">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -999,6 +991,7 @@
               <Pin Id="JOEn4JHfsDNL2Z97dsYsie" Name="Model" Kind="InputPin" />
               <Pin Id="OxBOhUvxQDgLt7y32mUswf" Name="Input Variable" Kind="InputPin" />
               <Pin Id="NUhg94QTpQWNbkszOFjkTJ" Name="Results" Kind="OutputPin" />
+              <Pin Id="VEMJ3mK6Bk7PIuMfCjSLOx" Name="Shape" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="Ii3SkZIAn3AMPytsnHfHCZ" Bounds="558,195" />
             <Node Bounds="705,288,86,20" Id="CCzB1gAPtaGM0OjSO8SIrr">

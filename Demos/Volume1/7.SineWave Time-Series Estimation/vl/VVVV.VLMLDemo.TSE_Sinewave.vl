@@ -195,29 +195,22 @@
               <Pin Id="CDtL3XeDqvULIkLzhGhEoR" Name="Model" Kind="InputPin" />
               <Pin Id="NP7J4jAbRC5LlScuhaKmr0" Name="Loss Function" Kind="InputPin" />
               <Pin Id="VGAiqAPp2eKQOuvL3AGYBz" Name="Evaluation Function" Kind="InputPin" />
-              <Pin Id="ALa3DZYkDXrNy6CdYgpPCa" Name="Learning Rate" Kind="InputPin" />
               <Pin Id="BD7Lup3eQCoNDdQlACRQHy" Name="Minibatch Size" Kind="InputPin" />
+              <Pin Id="ALa3DZYkDXrNy6CdYgpPCa" Name="Learning Rate" Kind="InputPin" />
               <Pin Id="VTKvV16vvmKP3xfdeuMjYY" Name="Momentum Schedule" Kind="InputPin" />
               <Pin Id="FhnzjnbzcWMMKv26AMEkwJ" Name="Train" Kind="InputPin" />
-              <Pin Id="I9ouLJsLW5gMozhxNNPWHv" Name="Async" Kind="InputPin" DefaultValue="True">
-                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                  <Choice Kind="TypeFlag" Name="Boolean" />
-                </p:TypeAnnotation>
-              </Pin>
-              <Pin Id="LvEljd6rE7MPCrVsG9CYIY" Name="Reset" Kind="InputPin" />
+              <Pin Id="CSep6Sv0prkLbnm4uFHzKd" Name="Debug Input" Kind="InputPin" />
               <Pin Id="CnqwSC8x6YaOf6qw9dx0uY" Name="Run Debug" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Boolean" />
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="CSep6Sv0prkLbnm4uFHzKd" Name="Debug Input" Kind="InputPin" />
-              <Pin Id="Nm2Vn4ZCdZINBgbQvPf7ud" Name="Stats" Kind="OutputPin" />
-              <Pin Id="OYvxK77NkolMH79QvY2VNE" Name="Debug Outputs" Kind="OutputPin" />
+              <Pin Id="LvEljd6rE7MPCrVsG9CYIY" Name="Reset" Kind="InputPin" />
               <Pin Id="NlUMMu43r0BNi5Y7VVVxW9" Name="Model Output" Kind="OutputPin" />
+              <Pin Id="Nm2Vn4ZCdZINBgbQvPf7ud" Name="Stats" Kind="OutputPin" />
               <Pin Id="FdvcisbwVwoLfxS6bWPwZK" Name="Loss Value" Kind="OutputPin" />
-              <Pin Id="CO1EQ6d790LP1oLe78RPYO" Name="Evaluation Average" Kind="OutputPin" />
               <Pin Id="GYhc82SpqSrPRKengAF4PM" Name="Epochs" Kind="OutputPin" />
-              <Pin Id="GEIH9Qp7EHSPrAwR6l9F81" Name="Sample Count" Kind="OutputPin" />
+              <Pin Id="OYvxK77NkolMH79QvY2VNE" Name="Debug Outputs" Kind="OutputPin" />
             </Node>
             <Node Bounds="360,839,128,19" Id="FEKtkNdFUzONRDXY19RXOe">
               <p:NodeReference LastCategoryFullName="VLMLInternal.Losses" LastSymbolSource="CNTK_Losses.vl">

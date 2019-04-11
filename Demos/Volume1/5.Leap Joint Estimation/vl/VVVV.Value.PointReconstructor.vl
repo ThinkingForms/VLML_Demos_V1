@@ -167,12 +167,11 @@
               <Pin Id="Ja0Q6UQ1lqsLoVwDV1TEjl" Name="Model" Kind="InputPin" />
               <Pin Id="TiOYQreXm5hLIIGCiaWHao" Name="Loss Function" Kind="InputPin" />
               <Pin Id="OkIUFUOl1EHN8gV8qFELca" Name="Evaluation Function" Kind="InputPin" />
-              <Pin Id="SZ70pBlImWsPHxTEIztb8y" Name="Learning Rate" Kind="InputPin" />
               <Pin Id="JgpijahpIsyQbNMDHq0Bvl" Name="Minibatch Size" Kind="InputPin" />
+              <Pin Id="SZ70pBlImWsPHxTEIztb8y" Name="Learning Rate" Kind="InputPin" />
               <Pin Id="MUIRXCw2t2vOo4eFEFqPri" Name="Train" Kind="InputPin" />
-              <Pin Id="IdYersOJSRJQH8sQQVVfQA" Name="Debug Input" Kind="InputPin" />
               <Pin Id="Cl3yjuFDvaGOBgsB5ShXc6" Name="Reset" Kind="InputPin" />
-              <Pin Id="TwpzBuBrlD9L8untKbMGoz" Name="Async" Kind="InputPin" />
+              <Pin Id="IdYersOJSRJQH8sQQVVfQA" Name="Debug Input" Kind="InputPin" />
               <Pin Id="DwWOeDsiM69PoEemsf1ah9" Name="Run Debug" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Boolean" />
@@ -183,9 +182,8 @@
               <Pin Id="Uo7qgpkZ3Y8P7drXtLD4ZS" Name="Debug Outputs" Kind="OutputPin" />
               <Pin Id="JtmwGorV4HpMTe96ACiisP" Name="Model Output" Kind="OutputPin" />
               <Pin Id="IKZ2YAMsTOyN7Jvfy31Ocf" Name="Loss Value" Kind="OutputPin" />
-              <Pin Id="Muh3kwh0CJlMdRhS2fbopq" Name="Evaluation Average" Kind="OutputPin" />
-              <Pin Id="LB7D2BfoKrmQX4kZc9KV8Y" Name="Epochs" Kind="OutputPin" />
               <Pin Id="Fm3gkuSSEzVOHiYbCHhwh6" Name="Sample Count" Kind="OutputPin" />
+              <Pin Id="LB7D2BfoKrmQX4kZc9KV8Y" Name="Epochs" Kind="OutputPin" />
             </Node>
             <Pad Id="SQjeDJg7os6PZOmA5rnWqr" Comment="Learning Rate" Bounds="711,1507,51,19" ShowValueBox="true" isIOBox="true" Value="0.00300000002607703">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -1227,7 +1225,7 @@
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="NsZZeeBnZ0yPm4exZPVXF1" Comment="Run Debug" Bounds="1226,1305,46,49" ShowValueBox="true" isIOBox="true" Value="True">
+            <Pad Id="NsZZeeBnZ0yPm4exZPVXF1" Comment="Run Debug" Bounds="1226,1305,46,49" ShowValueBox="true" isIOBox="true" Value="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
