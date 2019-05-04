@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" Version="0.99">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" LanguageVersion="2019.1.0-0242-gf587b4c0f7" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -192,7 +192,7 @@
                     <Pin Id="Jp7XSwjfM1GMvFWDY3QL9p" Name="Input" Kind="StateInputPin" />
                     <Pin Id="BRmiLiVAFaaP0wgVs8AZSw" Name="Tag" Kind="OutputPin" />
                   </Node>
-                  <Pad Id="VcdJ2HldLv3Lg9ykO5qoWf" Comment="Default" Bounds="361,378,20,20" ShowValueBox="true" isIOBox="true" Value="">
+                  <Pad Id="VcdJ2HldLv3Lg9ykO5qoWf" Comment="Default" Bounds="361,375,20,20" ShowValueBox="true" isIOBox="true" Value="">
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="TypeFlag" Name="String" />
                     </p:TypeAnnotation>
@@ -254,7 +254,7 @@
               <Pin Id="HIQQzZVyHshPpI5tDCeGf9" Name="Input" Kind="InputPin" />
               <Pin Id="AD0H3ik6mqTMZIX6pcj7xU" Name="Result" Kind="OutputPin" />
             </Node>
-            <Pad Id="RMykEvR7kWMLmHSg0bNjCH" Bounds="496,-58,386,7" ShowValueBox="true" isIOBox="true" Value="">
+            <Pad Id="RMykEvR7kWMLmHSg0bNjCH" Bounds="496,-54,386,7" ShowValueBox="true" isIOBox="true" Value="">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -306,7 +306,7 @@
                   <Pin Id="TC69rRMCfEIMuusTckf2xA" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="HIEds6pA2v4PjNmzLXg58n" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Pad Id="ACMsXJtkCk0PrOCDIlVjMG" Bounds="596,20,129,35" ShowValueBox="true" isIOBox="true" Value="Creates a file name by removing the URL details">
+                <Pad Id="ACMsXJtkCk0PrOCDIlVjMG" Bounds="596,10,129,35" ShowValueBox="true" isIOBox="true" Value="Creates a file name by removing the URL details">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -384,13 +384,13 @@
               <Patch Id="DOYHeXNk9OkN2coB4HzPYv" ManuallySortedPins="true">
                 <Patch Id="LdPtOKmGTtfP4VBnlw9Il5" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="RR3nP5ojshVNV9grCMjsCM" Name="Then" ManuallySortedPins="true" />
-                <Pad Id="KItm6AEhd2COPtDPc0mzkb" Bounds="1110,-129,131,33" ShowValueBox="true" isIOBox="true" Value="Please Choose&#xD;&#xA;'AlexNet_ImageNet_CNTK'&#xD;&#xA;'AlexNet_ImageNet_Caffe'&#xD;&#xA;'InceptionV3_ImageNet_CNTK'&#xD;&#xA;'BNInception_ImageNet_Caffe'&#xD;&#xA;'ResNet18_ImageNet_CNTK'&#xD;&#xA;'ResNet_18'&#xD;&#xA;'ResNet34_ImageNet_CNTK'&#xD;&#xA;'ResNet50_ImageNet_CNTK'&#xD;&#xA;'ResNet101_ImageNet_CNTK'&#xD;&#xA;'ResNet152_ImageNet_CNTK'&#xD;&#xA;'ResNet20_CIFAR10_CNTK'&#xD;&#xA;'ResNet110_CIFAR10_CNTK'&#xD;&#xA;'ResNet50_ImageNet_Caffe'&#xD;&#xA;'ResNet101_ImageNet_Caffe'&#xD;&#xA;'ResNet152_ImageNet_Caffe'&#xD;&#xA;'VGG16_ImageNet_Caffe'&#xD;&#xA;'VGG19_ImageNet_Caffe'&#xD;&#xA;'Fast-RCNN_grocery100'&#xD;&#xA;'Fast-RCNN_Pascal'">
+                <Pad Id="KItm6AEhd2COPtDPc0mzkb" Bounds="1110,-138,131,33" ShowValueBox="true" isIOBox="true" Value="Please Choose&#xD;&#xA;'AlexNet_ImageNet_CNTK'&#xD;&#xA;'AlexNet_ImageNet_Caffe'&#xD;&#xA;'InceptionV3_ImageNet_CNTK'&#xD;&#xA;'BNInception_ImageNet_Caffe'&#xD;&#xA;'ResNet18_ImageNet_CNTK'&#xD;&#xA;'ResNet_18'&#xD;&#xA;'ResNet34_ImageNet_CNTK'&#xD;&#xA;'ResNet50_ImageNet_CNTK'&#xD;&#xA;'ResNet101_ImageNet_CNTK'&#xD;&#xA;'ResNet152_ImageNet_CNTK'&#xD;&#xA;'ResNet20_CIFAR10_CNTK'&#xD;&#xA;'ResNet110_CIFAR10_CNTK'&#xD;&#xA;'ResNet50_ImageNet_Caffe'&#xD;&#xA;'ResNet101_ImageNet_Caffe'&#xD;&#xA;'ResNet152_ImageNet_Caffe'&#xD;&#xA;'VGG16_ImageNet_Caffe'&#xD;&#xA;'VGG19_ImageNet_Caffe'&#xD;&#xA;'Fast-RCNN_grocery100'&#xD;&#xA;'Fast-RCNN_Pascal'">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
                   <p:ValueBoxSettings />
                 </Pad>
-                <Pad Id="Up64K7aO5pgOjlWKGIt6x8" Bounds="1368,-59,375,33" ShowValueBox="true" isIOBox="true" Value="&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/AlexNet_ImageNet_CNTK.model&#xD;&#xA;https://www.cntk.ai/Models/Caffe_Converted/AlexNet_ImageNet_Caffe.model&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/InceptionV3_ImageNet_CNTK.model&#xD;&#xA;https://www.cntk.ai/Models/Caffe_Converted/BNInception_ImageNet_Caffe.model&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/ResNet18_ImageNet_CNTK.model&#xD;&#xA;https://cntkbuildstorage.blob.core.windows.net/cntk-pretrained-model/ResNet_18.model&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/ResNet34_ImageNet_CNTK.model&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/ResNet50_ImageNet_CNTK.model&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/ResNet101_ImageNet_CNTK.model&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/ResNet152_ImageNet_CNTK.model&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/ResNet20_CIFAR10_CNTK.model&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/ResNet110_CIFAR10_CNTK.model&#xD;&#xA;https://www.cntk.ai/Models/Caffe_Converted/ResNet50_ImageNet_Caffe.model&#xD;&#xA;https://www.cntk.ai/Models/Caffe_Converted/ResNet101_ImageNet_Caffe.model&#xD;&#xA;https://www.cntk.ai/Models/Caffe_Converted/ResNet152_ImageNet_Caffe.model&#xD;&#xA;https://www.cntk.ai/Models/Caffe_Converted/VGG16_ImageNet_Caffe.model&#xD;&#xA;https://www.cntk.ai/Models/Caffe_Converted/VGG19_ImageNet_Caffe.model&#xD;&#xA;https://www.cntk.ai/Models/FRCN_Grocery/Fast-RCNN_grocery100.model&#xD;&#xA;https://www.cntk.ai/Models/FRCN_Pascal/Fast-RCNN.model">
+                <Pad Id="Up64K7aO5pgOjlWKGIt6x8" Bounds="1368,-68,375,33" ShowValueBox="true" isIOBox="true" Value="&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/AlexNet_ImageNet_CNTK.model&#xD;&#xA;https://www.cntk.ai/Models/Caffe_Converted/AlexNet_ImageNet_Caffe.model&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/InceptionV3_ImageNet_CNTK.model&#xD;&#xA;https://www.cntk.ai/Models/Caffe_Converted/BNInception_ImageNet_Caffe.model&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/ResNet18_ImageNet_CNTK.model&#xD;&#xA;https://cntkbuildstorage.blob.core.windows.net/cntk-pretrained-model/ResNet_18.model&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/ResNet34_ImageNet_CNTK.model&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/ResNet50_ImageNet_CNTK.model&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/ResNet101_ImageNet_CNTK.model&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/ResNet152_ImageNet_CNTK.model&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/ResNet20_CIFAR10_CNTK.model&#xD;&#xA;https://www.cntk.ai/Models/CNTK_Pretrained/ResNet110_CIFAR10_CNTK.model&#xD;&#xA;https://www.cntk.ai/Models/Caffe_Converted/ResNet50_ImageNet_Caffe.model&#xD;&#xA;https://www.cntk.ai/Models/Caffe_Converted/ResNet101_ImageNet_Caffe.model&#xD;&#xA;https://www.cntk.ai/Models/Caffe_Converted/ResNet152_ImageNet_Caffe.model&#xD;&#xA;https://www.cntk.ai/Models/Caffe_Converted/VGG16_ImageNet_Caffe.model&#xD;&#xA;https://www.cntk.ai/Models/Caffe_Converted/VGG19_ImageNet_Caffe.model&#xD;&#xA;https://www.cntk.ai/Models/FRCN_Grocery/Fast-RCNN_grocery100.model&#xD;&#xA;https://www.cntk.ai/Models/FRCN_Pascal/Fast-RCNN.model">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -410,7 +410,7 @@
                   </Pin>
                   <Pin Id="F0YVPmQGO0rQP08UKamwu9" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Pad Id="Gl7L8bCQt1BNm2MWrcv9wT" Bounds="1401,-19,24,19" ShowValueBox="true" isIOBox="true" Value="10">
+                <Pad Id="Gl7L8bCQt1BNm2MWrcv9wT" Bounds="1401,-21,24,19" ShowValueBox="true" isIOBox="true" Value="10">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Byte" />
                   </p:TypeAnnotation>
@@ -457,7 +457,7 @@
                   <Pin Id="GqBWdHV3WcoLhn1HjytHVC" Name="New Value" Kind="InputPin" />
                   <Pin Id="D6liJh5RbfyPM8sDCGiYdH" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Pad Id="OLZWg5nxMZ8MLnblOKo5Jg" Comment="Old Value" Bounds="1127,-85,20,19" ShowValueBox="true" isIOBox="true" Value="'">
+                <Pad Id="OLZWg5nxMZ8MLnblOKo5Jg" Comment="Old Value" Bounds="1127,-87,20,19" ShowValueBox="true" isIOBox="true" Value="'">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -471,12 +471,12 @@
                   <Pin Id="FGuG7VWZflbLRR7n7M96s6" Name="New Mod List" Kind="InputPin" />
                   <Pin Id="MbUBv7f64WZPIW1lhsoVgy" Name="Urls" Kind="InputPin" />
                 </Node>
-                <Pad Id="Fl2FK0nIFOcPtStGeO7ADv" Comment="Old Char" Bounds="1165,-57,16,19" ShowValueBox="true" isIOBox="true" Value="_">
+                <Pad Id="Fl2FK0nIFOcPtStGeO7ADv" Comment="Old Char" Bounds="1165,-59,16,19" ShowValueBox="true" isIOBox="true" Value="_">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Char" />
                   </p:TypeAnnotation>
                 </Pad>
-                <Pad Id="TEmjqP0bq18LLL9zGhQEtb" Comment="New Char" Bounds="1252,-59,12,19" ShowValueBox="true" isIOBox="true" Value=" ">
+                <Pad Id="TEmjqP0bq18LLL9zGhQEtb" Comment="New Char" Bounds="1252,-61,12,19" ShowValueBox="true" isIOBox="true" Value=" ">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Char" />
                   </p:TypeAnnotation>
@@ -580,13 +580,13 @@
                   <Pin Id="AzgDKibFGMGMtJ2NWggKV9" Name="True" Kind="InputPin" />
                   <Pin Id="PAgE3gC7rOvLxDxECxw0it" Name="Output" Kind="OutputPin" />
                 </Node>
-                <Pad Id="JmByTHLrgGZM42ixIzRFtR" Comment="True" Bounds="613,1055,48,20" ShowValueBox="true" isIOBox="true" Value="Available">
+                <Pad Id="JmByTHLrgGZM42ixIzRFtR" Comment="True" Bounds="613,1052,48,20" ShowValueBox="true" isIOBox="true" Value="Available">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
                   <p:ValueBoxSettings />
                 </Pad>
-                <Pad Id="OzcledePVlyO5smdha4WNu" Comment="False" Bounds="596,1037,20,19" ShowValueBox="true" isIOBox="true" Value="Download or re-select">
+                <Pad Id="OzcledePVlyO5smdha4WNu" Comment="False" Bounds="596,1035,20,19" ShowValueBox="true" isIOBox="true" Value="Download or re-select">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -644,7 +644,7 @@
               <ControlPoint Id="D2hxHZWYCe3OpbatVc5SK8" Bounds="510,1110" Alignment="Bottom" />
             </Node>
             <ControlPoint Id="FKgVAFAInlWN5W3JlYYiLb" Bounds="510,1157" />
-            <Pad Id="CqDbUSteiTHPzjBcR90AEe" Comment="" Bounds="612,129,185,20" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="CqDbUSteiTHPzjBcR90AEe" Comment="" Bounds="612,126,185,20" ShowValueBox="true" isIOBox="true" />
             <Node Bounds="424,339,284,78" Id="KeYSSizVUyaPFnA3pBBtYR">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -691,7 +691,7 @@
               <Pin Id="A8H4kVYhO6qMP6TuiM4KXw" Name="Input 2" Kind="InputPin" />
               <Pin Id="JwMaUitTK2YN5uajwyMUQz" Name="Result" Kind="OutputPin" />
             </Node>
-            <Pad Id="V8RvjRxmh4yMmjNAKwMaY3" Bounds="207,153,141,23" ShowValueBox="true" isIOBox="true" Value="This ain't perfect yet.">
+            <Pad Id="V8RvjRxmh4yMmjNAKwMaY3" Bounds="207,149,141,23" ShowValueBox="true" isIOBox="true" Value="This ain't perfect yet.">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -700,7 +700,7 @@
                 <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
               </p:ValueBoxSettings>
             </Pad>
-            <Pad Id="IBRKuBmqqdxNMx9A7UtPGS" Bounds="211,212,164,77" ShowValueBox="true" isIOBox="true" Value="Ideally the path is only made available model is fully downloaded. I'll come back to it.">
+            <Pad Id="IBRKuBmqqdxNMx9A7UtPGS" Bounds="211,181,164,77" ShowValueBox="true" isIOBox="true" Value="Ideally the path is only made available model is fully downloaded. I'll come back to it.">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -765,12 +765,12 @@
               <Pin Id="ST11wF2TJnOMgZ6b732Bdu" Name="Output" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="DV2dDU1ZnimN3tglRAEtrU" Bounds="436,-212" />
-            <Pad Id="MWYiDBigkYkL8HyBFwiWZv" Comment="True" Bounds="624,-155,156,19" ShowValueBox="true" isIOBox="true" Value="Please Choose">
+            <Pad Id="MWYiDBigkYkL8HyBFwiWZv" Comment="True" Bounds="624,-157,156,19" ShowValueBox="true" isIOBox="true" Value="Please Choose">
               <p:TypeAnnotation LastCategoryFullName="VVVV.Value.ImageModelDownloader" LastSymbolSource="Downloaders.vl">
                 <Choice Kind="TypeFlag" Name="ModelPick" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="TMjY2IRXek8LmAXaF2oBC9" Comment="Simulate" Bounds="1090,-224,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <Pad Id="TMjY2IRXek8LmAXaF2oBC9" Comment="Simulate" Bounds="1090,-234,35,35" ShowValueBox="true" isIOBox="true" Value="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>

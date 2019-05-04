@@ -1,0 +1,25 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
+   <PATCH nodename="C:\Users\H\Documents\ThinkingForms\VLDL\Gamma Demos\Demos\Demos\Volume1 - For Tutorials\6.Wekinator\PictureToSomething.v4p" systemname="PictureToSomething" filename="C:\Users\H\Desktop\Demos\Wekinator\PictureToSomething.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="1725" top="1455" width="7695" height="3345">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="dx11.particles" Version="1.0.5">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   <NODE systemname="WekiLike (Value)" filename="vl\VVVV.Value.WekiLike.vl" nodename="WekiLike (Value)" componentmode="Hidden" id="43">
+   <BOUNDS type="Node" left="990" top="1080" width="900" height="270">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="42" systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="InAWindow">
+   <BOUNDS type="Node" left="2820" top="1110" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2820" top="1110" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1905" top="7140" width="6240" height="5085">
+   </BOUNDS>
+   </NODE>
+   </PATCH>
