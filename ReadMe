@@ -1,1 +1,3 @@
-A repo of examples and demos for getting familiar with VLML
+A repo of examples and demos for getting familiar with VLML. Some of these demos are best tested with a dedicated Nvidia card. Most of these demos have been tested on a late 2014 Macbook pro with an Nvidia 750M graphics card. Anything newer than that should be supported but get in touch if you find any issues. 
+
+Enjoy!
